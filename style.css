@@ -1,0 +1,117 @@
+/*
+display block, margin auto : untuk memusat khusus 1 file (tanpa div)
+flexbox/display flex : pengganti display & margin khusus beberapa file (pakai div)
+align item : combo flexbox untuk pusat atas bawah
+justify content : combo flexbox pusat kanan kiri
+gap : buat mengatur jarak antara file 1 dg lainnya saat menggunakan combo flexbox
+border radius : untuk sudut lengkung foto
+border : garis pinggir foto
+width : lebar ukuran paksa
+height : tinggi ukuran paksa
+text align : mengatur dmn pusat text (center ditengah)
+urutan margin bawaan : top, right, bottom, left : atas kanan bawah kiri
+cursor pointer : untuk merubah jd gambar tangan pas cursor mengarah ke tombol
+button hover : saat mengarahkan cursor ke tombol akan terjadi apa..
+padding : ukuran background pada suatu text
+
+/*-----------ui & foto------------*/
+
+body{
+    background-color: black;
+    color: white;
+}
+#foto{
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 675px;
+    height: 80%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.cover{
+    width: 30%;
+    max-width: 300px;
+    height: 30%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/*--------------text---------------*/
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+.pilihan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 80%;
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.pilihan:hover{
+    transform: scale(1.03);
+}
+#chapter{
+    text-align: center;
+    font-size: 30px;
+}
+#story{
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 90%;
+    align-items: center;
+}
+
+/*-------------tombol--------------*/
+
+button{
+    transition: 0.2s;
+}
+.ayo{
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+@media (hover:hover){
+    #back:hover{
+        background-color: red;
+    }
+    button:hover{
+        background-color: gray;
+    }
+}
+button:active{
+    background-color: gray;
+}
+#back:active{
+    background-color: red;
+}
+#back{
+    cursor: pointer;
+    padding: 7px 15px;
+}
+.tombol{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.nav-btn{
+    cursor: pointer;
+    padding: 10px 30px;
+}
